@@ -128,35 +128,25 @@ export default class ExchangesController {
 
           const date = new Date();
 
-          let day = date.getDate();
+          let day = date.getDate(); //30
 
-          let month = date.getMonth() + 1;
+          let month = date.getMonth() + 1;   //10
 
+          const year = date.getFullYear(); //  2023
 
-          if(month < 10) {
-            let moon = date.getMonth() + 1;
-            let month = "0"+moon;
+          const tarih = `${day < 10 ? "0" : ""}${day}.${month < 10 ? "0" : ""}${month}.${year}`;
 
-            
-          if (r1.length > 1 && (day+"."+month == parseFloat(r3))) {
+          const urunTarih = r3.slice(0, 10);
+
+          if (r1.length > 1 && urunTarih === tarih) { 
+
             currencies.push(item);
-            console.log(day+"."+month+"="+ parseFloat(r3));
 
-        
-          }
-          }
-          else {
-            let moon = date.getMonth() +1;
-            let month= moon;
 
-            if (r1.length > 1) {
-              currencies.push(item);
-              console.log(day+"."+month+"="+ parseFloat(r3));
-  
-          
-            }
-         
+
+
           }
+
 
 
         }
@@ -230,34 +220,23 @@ export default class ExchangesController {
           };
           const date = new Date();
 
-          let day = date.getDate();
+          let day = date.getDate(); //30
 
-          let month = date.getMonth() + 1;
+          let month = date.getMonth() + 1;   //10
 
+          const year = date.getFullYear(); //  2023
 
-          if(month < 10) {
-            let moon = date.getMonth() + 1;
-            let month = "0"+moon;
+          const tarih = `${day < 10 ? "0" : ""}${day}.${month < 10 ? "0" : ""}${month}.${year}`;
 
-            
-          if (r1.length > 1 && (day+"."+month == parseFloat(r3))) {
+          const urunTarih = r3.slice(0, 10);
+
+          if (r1.length > 1 && urunTarih === tarih) { 
+
             currencies.push(item);
-            console.log(day+"."+month+"="+ parseFloat(r3));
 
-        
-          }
-          }
-          else {
-            let moon = date.getMonth() +1;
-            let month= moon;
 
-            if (r1.length > 1) {
-              currencies.push(item);
-              console.log(day+"."+month+"="+ parseFloat(r3));
-  
-          
-            }
-         
+
+
           }
         }
       }
@@ -388,34 +367,23 @@ export default class ExchangesController {
           };
           const date = new Date();
 
-          let day = date.getDate();
+          let day = date.getDate(); //30
 
-          let month = date.getMonth() + 1;
+          let month = date.getMonth() + 1;   //10
 
+          const year = date.getFullYear(); //  2023
 
-          if(month < 10) {
-            let moon = date.getMonth() + 1;
-            let month = "0"+moon;
+          const tarih = `${day < 10 ? "0" : ""}${day}.${month < 10 ? "0" : ""}${month}.${year}`;
 
-            
-          if (r1.length > 1 && (day+"."+month == parseFloat(r3))) {
+          const urunTarih = r3.slice(0, 10);
+
+          if (r1.length > 1 && urunTarih === tarih) { 
+
             currencies.push(item);
-            console.log(day+"."+month+"="+ parseFloat(r3));
 
-        
-          }
-          }
-          else {
-            let moon = date.getMonth() +1;
-            let month= moon;
 
-            if (r1.length > 1) {
-              currencies.push(item);
-              console.log(day+"."+month+"="+ parseFloat(r3));
-  
-          
-            }
-         
+
+
           }
         }
 
@@ -494,34 +462,23 @@ export default class ExchangesController {
           };
           const date = new Date();
 
-          let day = date.getDate();
+          let day = date.getDate(); //30
 
-          let month = date.getMonth() + 1;
+          let month = date.getMonth() + 1;   //10
 
+          const year = date.getFullYear(); //  2023
 
-          if(month < 10) {
-            let moon = date.getMonth() + 1;
-            let month = "0"+moon;
+          const tarih = `${day < 10 ? "0" : ""}${day}.${month < 10 ? "0" : ""}${month}.${year}`;
 
-            
-          if (r1.length > 1 && (day+"."+month == parseFloat(r3))) {
+          const urunTarih = r3.slice(0, 10);
+
+          if (r1.length > 1 && urunTarih === tarih) { 
+
             currencies.push(item);
-            console.log(day+"."+month+"="+ parseFloat(r3));
 
-        
-          }
-          }
-          else {
-            let moon = date.getMonth() +1;
-            let month= moon;
 
-            if (r1.length > 1) {
-              currencies.push(item);
-              console.log(day+"."+month+"="+ parseFloat(r3));
-  
-          
-            }
-         
+
+
           }
         }
       }
